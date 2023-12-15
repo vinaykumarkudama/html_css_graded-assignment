@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="labtest.css">
+
+    <title>Lab Test Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <section class="form-section">
+    
+      <div class="form-container">
+        <form action="submit_lab_test.php" method="post">
+            <h2>Lab Test Booking</h2>
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" required>
+            </div>
+           
+
+            <div class="form-group">
+                <label for="patient">Patient Id:</label>
+                <input type="text" class="form-control" id="patient" name="patient" required>
+            </div>
+            
+            
+
+            <div class="form-group">
+                <label for="phone">Contcat No:</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+           
+
+            <div class="form-group">
+                <label for="email">Email Id:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+          
+           
+
+            <div>
+                <label for="comment">Address:</label>
+                <textarea class="form-control" rows="4" id="comment" name="text" placeholder="Your Address"></textarea>
+             </div>
+             <div><br></div>
+            
+
+             <label for="dist">District:</label>
+             <div class="form-floating">
+                <select class="form-select" id="dist" name="distlist">
+                  <option>-select here-</option>  
+                  <option>Visakhapatnam</option>
+                  <option>Anakapalli</option>
+                  <option>Vijayanagaram</option>
+                  <option>Nellore</option>
+                  <option>Ongole</option>
+                </select>
+            </div>
+            <div><br></div>
+           
+
+            <div class="checkbox">
+                <label for="select">Test Type:</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check1" name="option1" >
+                <label class="form-check-label">CBC</label>
+            </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check2" name="option2">
+                <label class="form-check-label">Complete Urine</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check3" name="option3">
+                <label class="form-check-label">Lipid Profile</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check4" name="option4">
+                <label class="form-check-label">Thyroid Stimulating Hormone</label>
+              </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check4" name="option4">
+                <label class="form-check-label">Glucose Test</label>
+              </div>
+              <div><br></div>
+           
+
+            <div class="radio">
+            <label for="select">Do You Want Hard Copy?</label>
+            </div>
+            <div class="form-check">
+            <label class="form-check-label" for="check1"></label>
+                <input type="radio" class="form-check-input" id="check1" name="answer" value="yes"> Yes
+            </div>
+    
+            <div class="form-check">
+            <label class="form-check-label" for="check2"></label>
+                <input type="radio" class="form-check-input" id="check2" name="answer" value="no"> No
+            </div>
+            <div><br></div>
+         
+
+                <div class="date">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    </div>
+                    <div><br></div>
+                 
+                    
+                <div class="time">
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+                    </div>
+                    <div><br></div>
+                    
+                
+            <button type="submit" class="btn btn-primary">Submit</button>&nbsp;&nbsp;      
+            <button type="reset" class="btn btn-secondary">Reset</button>
+           
+        </form>
+      </div>  
+      <div class="image-container">
+        <img src="./Images/Lab-Test/lab-test.jpg" alt="Image" class="fixed-image">
+     </div>
+    </section>
+</body>
+</html>
